@@ -1,0 +1,21 @@
+.nav {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	height: 65px;
+}
+
+.nav ul {
+	float: right;
+}
+
+.nav ul li {
+	display: inline;
+}
+
+.nav ul li a {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 20px 10px 20px;
+}

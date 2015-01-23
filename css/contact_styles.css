@@ -1,0 +1,53 @@
+* { box-sizing: border-box; } 
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header h1 {
+	text-align: center;
+}
+body{
+	/*background-color: #acf8e1;*/
+	background-image: url("../img/honey_tile.png");
+	color: white;
+}
+
+div {
+	display: block;
+}
+.column {
+	width: 40%;
+	display: inline-block;
+	float: left;
+	margin: 25px;
+}
+
+.contact {
+	width: 600px;
+	height: 600px;
+	background-color: white;
+	border-radius: 100%;
+	color: grey;
+	padding: 10%;
+
+}
+
+.info {
+	margin-top: 80px;
+	margin-left: 50px;
+}
+
+/*Typography*/
+h1,
+h2,
+h3 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+p,
+li {
+	font-family: Georgia, Times, Times New Roman, serif;
+}
+
+
