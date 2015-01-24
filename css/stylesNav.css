@@ -107,3 +107,13 @@ header nav a:hover {
 .panel-title {
 	color: #1C8E6C;
 }
+
+#name img{
+	padding: 10px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+ }
