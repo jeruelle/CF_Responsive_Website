@@ -4,25 +4,29 @@
     <meta charset="utf-8">
 
     <title>Rachael Sewell</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/stylesNav.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.js" ></script>
-  </head>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="css/stylesNav.css" rel="stylesheet">
+  </head>
   <header>
-    <h1><a href="#">RS</a></h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="contact.html">Contact Me</a>
-      <a href="faq.html">FAQ</a>
+  <nav id="navbar">
+      <div class="nav container-fluid">
+        <ul>
+          <li><a href="#navbar">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <body>
-
+  <body data-spy="scroll" data-target="#navbar">
+    
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container topContainer">
@@ -67,6 +71,34 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </div> <!--END Carousel Container-->
+
+    <div class="container" id="about">
+      <div class="header">
+        <h1>About Me</h1>
+      </div>
+      <div class="image column">
+        <img src="img/AboutME.jpg" alt="Profile Picture">
+      </div>
+      <div class="intro column">
+        <!--<h2>Introduction</h2>-->
+        <p>Meggings put a bird on it sartorial</p>
+      </div>
+      <div class="skills column">
+        <h3>My Skills</h3>
+        <ul id="skill_list">
+          <li>PoMeggings put a bird on it sartorial, Blue Bottle hashtag flannel banjo iPhone YOLO butcher drinking vinegar stumptown.laroid cornhole tousled</li>
+          <li>quinoa banh mi organic stumptown four loko lumbersexual</li>
+          <li>Intelligentsia Bushwick swag gastropub</li>
+        </ul>
+      </div>
+      <div class="main_text">
+        <h3>My Story</h3>
+        <p>Keytar bitters leggings, Carles Wes Anderson mustache fixie fingerstache lomo bespoke DIY small batch sustainable. Banh mi roof party cornhole photo booth gentrify gastropub pug +1 8-bit try-hard letterpress, four loko kale chips meh asymmetrical. Organic small batch cronut cold-pressed, roof party lomo typewriter scenester skateboard plaid four dollar toast. Art party gentrify 90's swag meggings, banh mi Wes Anderson Thundercats locavore farm-to-table brunch pug Truffaut ethical. Literally Wes Anderson meggings lomo deep v. Locavore post-ironic heirloom, literally before they sold out jean shorts semiotics readymade church-key cronut quinoa normcore sustainable Vice. Banh mi drinking vinegar letterpress literally tattooed Carles.</p>
+      </div>
+    </div><!--END About Container-->
+
+    <div class="container" id="work">
       <div class="row">
         <div class="col-md-4 col-xs-6">
           <h2>Portfolio Concept</h2>
@@ -84,31 +116,96 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
-      <div class="container hidden-sm hidden-xs hidden-md">
-        <div class="row" id="name">
-          <div class="col-md-3 col-xs-6">
-            <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+    </div><!--END Work Container-->    
+
+    <div class="container" id="faq">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne"><span class="glyphicon glyphicon-menu-right"></span>
+                Where do you come from?
+              </a>
+            </h4>
           </div>
-          <div class="col-md-3 col-xs-6">
-            <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Planet Earth.
+            </div>
           </div>
-          <div class="col-md-3 col-xs-6">
-            <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-controls="collapseTwo"><span class="glyphicon glyphicon-menu-right"></span>
+                Do you think puppies are cute?
+              </a>
+            </h4>
           </div>
-          <div class="col-md-3 col-xs-6">
-            <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              I think puppies are ADORABLE!
+            </div>
           </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-controls="collapseThree"><span class="glyphicon glyphicon-menu-right"></span>
+                Do you have any siblings?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              Yes I have two Brothers. 
+            </div>
+          </div>
+        </div>
       </div>
-      <hr>
+    </div><!--END FAQ Container-->
 
+    <div class="container" id="contact">
+      <div class="header">
+        <h1>Contact Me</h1>
+        <hr>
+      </div>
+      <div class="column contact">
+        <div class="info">
+          <p><span class="glyphicon glyphicon-heart"></span>Rachael Sewell</p>
+        </div>
+        <div class="info">
+          <p><span class="glyphicon glyphicon-phone-alt"></span>Phone: 425.314.7795</p>
+        </div>
+        <div class="info">
+          <p><span class="glyphicon glyphicon-send"></span>Email: s.rachael@gmail.com</p>
+        </div>
+      </div>
+      <div class="column">
+      </div>
+    </div><!--END Contact Container-->
 
-    </div> <!-- /container -->
-
-
-    <!-- 
-    ================================================== -->
-    <!-- Can place script tags with JavaScript files here -->
-
+    
+    
+    
   </body>
 </html>
 </html>
+
+<!--
+<div class="container hidden-sm hidden-xs hidden-md">
+      <div class="row" id="name">
+        <div class="col-md-3 col-xs-6">
+          <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <img src="img/puppy.jpg" alt="puppy pic" class=”img-responsive”></img>
+        </div>
+    </div>
+-->
