@@ -9,6 +9,9 @@ body {
   top: 65px;
 }
 
+.anchor {
+	padding-top: 50px;
+}
 
 .carousel-caption {
 	color: black;
@@ -35,7 +38,14 @@ body {
 }
 
 
-
+.navbar-header{
+	float: right;
+}
+.nav li a {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
 .jumbotron p {
 	color: #1EBF4C;
 
@@ -44,15 +54,13 @@ body {
 a {
 	font-size: 20px;
 }
-
-.nav {
+/*nav {
 	background-color: #2e3133;
 	position: fixed;
 	letter-spacing: 0.1em;
 	width: 100%;
 	height: 65px;
 	z-index: 1;
-
 }
 
 .nav ul {
@@ -72,22 +80,36 @@ a {
 	transition: color 600ms;
 	-webkit-transition: color 600ms; 
 }
+*/
 
-li.active {
-  color: #acafb2 ;
-  background-color: #1C8E6C;
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: #1C8E6C;
+	color: #2e3133;
 }
-
 a:hover {
 	text-decoration: none;
 }
 
+.myProj {
+	float: left;
+	text-transform: uppercase;
+    font-size: 16px;
+    padding: 13px;
+}
 
-.nav a:hover {
+.myProj a{
+	color: #1C8E6C;
+	padding: 15px;
+}
+
+.navbar a:hover {
   color: #acafb2 ;
   background-color: #1C8E6C;
 }
-
+.nav li a:hover {
+  color: #acafb2 ;
+  background-color: #1C8E6C;
+}
 
 #accordion {
 	padding-top: 65px;
@@ -115,3 +137,39 @@ a:hover {
   max-width: 100%;
   height: auto;
  }
+
+#faq{
+	background-image: url('../img/electronics.jpg');
+/*Add a background image*/
+	/*background-attachment: fixed;*/
+/*Give the background a fixed position does it not scroll when you scroll*/
+	background-size: cover;
+/*Have the background cover the entire div section*/
+	color: #2e3133;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+	padding:100px;
+	padding-top: 5px;
+	/*height: 400px;*/
+	min-height: 1020px;
+	margin-top: 45px;
+	margin-bottom: 15px;
+	width: 100%
+}
+
+
+ #contact{
+	background-image: url('../img/Fern.jpg');
+/*Add a background image*/
+	background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+	background-size: cover;
+/*Have the background cover the entire div section*/
+	color: white;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+	padding:100px;
+	padding-top: 50px;
+	/*height: 400px;*/
+	min-height: 500px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}

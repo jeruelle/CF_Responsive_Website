@@ -13,22 +13,43 @@
     <link href="css/stylesNav.css" rel="stylesheet">
   </head>
   <header>
-  <nav id="navbar">
-      <div class="nav container-fluid">
-        <ul>
-          <li><a href="#navbar">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
+    <div id="navibar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="myProj">
+            <a href="#home">RS</a>
+          </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" 
+  data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#about">About Me</a></li>
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#work">Work <b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="#work1">Work1</a></li>
+                  <li><a href="#work2">Work2</a></li>
+                  <li><a href="#work3">Work3</a></li>
+                </ul>
+              </li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
   </header>
-  <body data-spy="scroll" data-target="#navbar">
-    
+  <body data-spy="scroll" data-target="#navibar">
+         
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div id="home" class="jumbotron">
       <div class="container topContainer">
         <h1>Rachael Sewell</h1>
         <p><strong>Hi! I'm an apiring full-stack web developer.</strong> I've been hanging out in the electronics industry for the past 9 years, but it seems like this Internet thing is really taking off.</p>
@@ -74,6 +95,7 @@
     </div> <!--END Carousel Container-->
 
     <div class="container" id="about">
+      <div class="container anchor" id="process"></div>
       <div class="header">
         <h1>About Me</h1>
       </div>
@@ -99,18 +121,20 @@
     </div><!--END About Container-->
 
     <div class="container" id="work">
+      <div class="container anchor" id="process"></div>
+      <h1>Work</h1>
       <div class="row">
-        <div class="col-md-4 col-xs-6">
+        <div id="work1" class="col-md-4 col-xs-6">
           <h2>Portfolio Concept</h2>
           <p>For "Portfolio Concept," take a few minutes to think about YOUR portfolio site and outline the content you want to include. If you already have some web development experience and some prior projects, this is the opportunity to highlight them. If you have work from another industry, you can provide those of examples of your professional experience as well. If you have any design elements in mind, you can record these as well. Your mentor might be able to help you find images, fonts, or other elements for your site. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-md-4 col-xs-6">
+        <div id="work2" class="col-md-4 col-xs-6">
           <h2>Project Goals</h2>
           <p>For "Project Goals," include any details about deadlines you want to meet and time you can commit each week. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
-        <div class="col-md-4 col-xs-6">
+        <div id="work3" class="col-md-4 col-xs-6">
           <h2>Course Goals</h2>
           <p>For "Course Goals," write down your professional learning goals. Are you changing careers, or advancing your existing skill set? Do you want to become a freelancer after this course? Get hired as an entry level developer? Your course goals will be tied closely to your project goals. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
@@ -119,6 +143,8 @@
     </div><!--END Work Container-->    
 
     <div class="container" id="faq">
+      <div class="container anchor" id="process"></div>
+      <h1>FAQ</h1>
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -166,6 +192,7 @@
     </div><!--END FAQ Container-->
 
     <div class="container" id="contact">
+      <div class="container anchor" id="process"></div>
       <div class="header">
         <h1>Contact Me</h1>
         <hr>
@@ -186,10 +213,20 @@
     </div><!--END Contact Container-->
 
     
-    
+    <script type="text/javascript">
+    var $root = $('html, body');
+      $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+              scrollTop: $(href).offset().top
+          }, 500, function () {
+              window.location.hash = href;
+          });
+          return false;
+      });
+    </script>
     
   </body>
-</html>
 </html>
 
 <!--
