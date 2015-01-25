@@ -29,12 +29,16 @@ body {
 	padding: 25px;
 }
 
+
 .col-md-4 {
+	margin: 5px;
+	width: 32%;
+}
+
+.roundBack {
 	background-color: white;
 	opacity: .9;
 	border-radius: 25px;
-	margin: 5px;
-	width: 32%;
 }
 
 
@@ -154,7 +158,23 @@ a:hover {
 	margin-bottom: 15px;
 	width: 100%
 }
+.whiteText {
+	color: white;
+}
 
+#about h1{
+	color: white;
+}
+
+#about img {
+	display:block;
+    margin:auto;
+}
+
+
+#work h1{
+	color: white;
+}
 
  #contact{
 	background-image: url('../img/Fern.jpg');
