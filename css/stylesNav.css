@@ -149,7 +149,6 @@ a:hover {
 /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
 	padding:100px;
 	padding-top: 5px;
-	/*height: 400px;*/
 	min-height: 1020px;
 	margin-top: 45px;
 	margin-bottom: 15px;
@@ -172,4 +171,8 @@ a:hover {
 	min-height: 500px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+#contact span {
+	margin: 15px;
 }
